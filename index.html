@@ -9,23 +9,35 @@
 </head>
 <body>
     <div class="image-container">
+        <img src="img/background.jpg" alt="fern" class="fern">
         <div class="image__header">
             <img src="img/odin-lined.png" alt="Viking" id="image__logo">
             <div id="logo__name"></div>
         </div>
-        <div class="img__credits"></div>
+        <a href="" class="img__credits">Photo by Halie West on Unsplash</a>
     </div>
     <div class="signup-container">
-        <div class="opening__blurb"></div>
-        <p class="extra-line"></p>
+        <div class="opening__blurb">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</div>
+        <p class="extra-line">You know you want to.</p>
         <div class="form__container">
-            <div id="call_to_action"></div>
+            <div id="call_to_action">Let's do this!</div>
             <div class="input-container">
-
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" id="first-name" required>
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" id="last-name" required>
+                <label for="mail">EMAIL</label>
+                <input type="email" name="mail" id="mail" required>
+                <label for="telnumber">PHONE NUMBER</label>
+                <input type="tel" name="telnumber" id="telnumber" required>
+                <label for="pw">PASSWORD</label>
+                <input type="password" name="pw" id="pw" required>
+                <label for="pwconfirm">CONFIRM PASSWORD</label>
+                <input type="password" name="pwconfirm" id="pwconfirm" required>
             </div>
         </div>
-        <button class="create-account"></button>
-        <a href="" class="alreadyaccount"></a>
+        <button class="create-account">Create Account</button>
+        <a href="" class="alreadyaccount">Already have an account? Log in</a>
     </div>
 </body>
 </html>
