@@ -1,0 +1,63 @@
+/* style */
+
+:root {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: OdinFont;
+    src: url(fonts/Norse-Bold.otf);
+    font-weight: bold;
+}
+
+#image-container {
+    max-height: 100vh;
+    position: absolute;
+}
+
+.fern {
+    max-height: inherit;
+    width: 600px;
+}
+
+.image__header {
+    position: relative;
+    height: 130px;
+    width: auto;
+    background-color: rgb(0, 0, 0, 0.6);
+    bottom: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#image__logo {
+    height: inherit;
+}
+
+#logo__name {
+    font-family: OdinFont, sans-serif;
+    font-size: 100px;
+    color: white;
+}
+
+.credits {
+    position: relative;
+    bottom: 22vh;
+    color: white;
+    text-align: center;
+}
+
+a.author,
+a.website {
+    color: white;
+}
