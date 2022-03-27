@@ -18,22 +18,20 @@ body {
     font-weight: bold;
 }
 
-#image-container {
-    position: absolute;
-    max-width: ;
-}
-
-.fern {
-    width: 600px;
-    padding: 0;
-    margin: 0;
-    display: block;
+.image-container {
+    background-image: url(img/background.jpg);
+    height: 100vh;
+    max-width: 35vw;
+    width: 100%;
+    background-color: #596D48;
+    background-size: cover;
 }
 
 .image__header {
     position: absolute;
     height: 130px;
-    width: 600px;
+    max-width: inherit;
+    width: 100%;
     background-color: rgb(0, 0, 0, 0.6);
     bottom: 60%;
     display: flex;
@@ -55,8 +53,9 @@ body {
 .credits {
     position: absolute;
     display: flex;
+    max-width: inherit;
+    width: 100%;
     bottom: 1%;
-    width: 600px;
     justify-content: center;
     color: white;
 }
@@ -82,7 +81,8 @@ a.website {
 
 .form__container {
     background-color: #ffffff;
-    padding: 42px;
+    padding: 25px;
+    padding-left: 42px;
     margin-bottom: 10px;
     box-shadow: 0 5px 5px rgba(69, 77, 97, 0.5);
 }
@@ -149,4 +149,13 @@ label {
     padding-top: 2%;
     color: #596D48;
     font-weight: bold;
+}
+
+input:focus {
+    outline: 1px solid rgb(64, 130, 252);
+    box-shadow: 0 5px 5px rgb(211,211,211, 0.6)
+}
+
+input:invalid:focus {
+    outline: 1px solid red;
 }
