@@ -19,21 +19,23 @@ body {
 }
 
 #image-container {
-    max-height: 100vh;
     position: absolute;
+    max-height: 900px;
 }
 
 .fern {
-    max-height: inherit;
     width: 600px;
+    padding: 0;
+    margin: 0;
+    display: block;
 }
 
 .image__header {
-    position: relative;
+    position: absolute;
     height: 130px;
-    width: auto;
+    width: 600px;
     background-color: rgb(0, 0, 0, 0.6);
-    bottom: 80vh;
+    bottom: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,13 +53,56 @@ body {
 }
 
 .credits {
-    position: relative;
-    bottom: 22vh;
+    position: absolute;
+    display: flex;
+    bottom: 1%;
+    width: 600px;
+    justify-content: center;
     color: white;
-    text-align: center;
 }
 
 a.author,
 a.website {
     color: white;
+}
+
+.signup-container {
+    display: flex;
+    background-color: #f9fafb;
+    flex-direction: column;
+}
+
+.opening__blurb,
+.extra-line {
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 40px;
+    padding-right: 38%;
+}
+
+.opening__blurb {
+    padding-top: 140px;
+}
+
+.form__container {
+    background-color: #ffffff;
+    box-shadow: 3px 3px #888;
+    padding: 42px;
+    margin-bottom: 10px;
+}
+
+#call_to_action {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.signup-container {
+    display: flex;
+    width: 100%;
+}
+
+input,
+label {
+    display: block;
 }
